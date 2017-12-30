@@ -1,0 +1,53 @@
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif; }
+
+.jumbo:hover {
+  -webkit-filter: contrast(120%);
+          filter: contrast(120%); }
+
+.carousel {
+  height: 500px; }
+  .carousel .item {
+    height: 500px; }
+
+.carousel-indicators li {
+  background-color: #000;
+  border: 1px solid red;
+  border-radius: 40%; }
+
+.carousel-caption h4, .carousel-caption p {
+  text-shadow: 1px 1px 2px black, 0 0 6px blue, 0 0 4px #222;
+  font-weight: 700; }
+.carousel-caption h4 {
+  font-size: 26px; }
+.carousel-caption p {
+  font-size: 22px; }
+
+.image1 {
+  background: url(https://images.pexels.com/photos/6482/black-and-white-man-person-hands.jpg?w=940&h=650&auto=compress&cs=tinysrgb) 0/cover no-repeat; }
+
+.image2 {
+  background: url(https://images.pexels.com/photos/414781/pexels-photo-414781.jpeg?w=940&h=650&auto=compress&cs=tinysrgb) 0/cover no-repeat; }
+
+.image3 {
+  background: url(https://images.pexels.com/photos/164531/pexels-photo-164531.jpeg?w=940&h=650&auto=compress&cs=tinysrgb) 0/cover no-repeat; }
+
+.glyphicon {
+  color: red; }
+
+.left {
+  transition-duration: 1s; }
+  .left:hover {
+    -webkit-transform: translateX(-4vw);
+            transform: translateX(-4vw); }
+
+.right {
+  transition-duration: 1s; }
+  .right:hover {
+    -webkit-transform: translateX(4vw);
+            transform: translateX(4vw); }
+
+/*# sourceMappingURL=style.prefixer.css.map */
