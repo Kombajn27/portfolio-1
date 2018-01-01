@@ -1,5 +1,7 @@
+* {
+  box-sizing: border-box; }
+
 body {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
   font-family: 'Lato', sans-serif; }
@@ -12,6 +14,14 @@ body {
   height: 500px; }
   .carousel .item {
     height: 500px; }
+    @media (max-width: 767px) {
+      .carousel .item {
+        width: auto;
+        height: 65vw; } }
+  @media (max-width: 767px) {
+    .carousel {
+      width: auto;
+      height: 65vw; } }
 
 .carousel-indicators li {
   background-color: #000;
@@ -22,9 +32,15 @@ body {
   text-shadow: 1px 1px 2px black, 0 0 6px blue, 0 0 4px #222;
   font-weight: 700; }
 .carousel-caption h4 {
-  font-size: 26px; }
+  font-size: 28px; }
+  @media (max-width: 767px) {
+    .carousel-caption h4 {
+      font-size: 4vw; } }
 .carousel-caption p {
-  font-size: 22px; }
+  font-size: 24px; }
+  @media (max-width: 767px) {
+    .carousel-caption p {
+      font-size: 3vw; } }
 
 .image1 {
   background: url(https://images.pexels.com/photos/6482/black-and-white-man-person-hands.jpg?w=940&h=650&auto=compress&cs=tinysrgb) 0/cover no-repeat; }
@@ -36,18 +52,106 @@ body {
   background: url(https://images.pexels.com/photos/164531/pexels-photo-164531.jpeg?w=940&h=650&auto=compress&cs=tinysrgb) 0/cover no-repeat; }
 
 .glyphicon {
-  color: red; }
-
-.left {
+  color: red;
   transition-duration: 1s; }
-  .left:hover {
-    -webkit-transform: translateX(-4vw);
-            transform: translateX(-4vw); }
 
-.right {
-  transition-duration: 1s; }
-  .right:hover {
-    -webkit-transform: translateX(4vw);
-            transform: translateX(4vw); }
+.left:hover .glyphicon {
+  -webkit-transform: translateX(-4vw);
+          transform: translateX(-4vw); }
+
+.right:hover .glyphicon {
+  -webkit-transform: translateX(4vw);
+          transform: translateX(4vw); }
+
+.container {
+  margin-top: 50px;
+  margin-bottom: 50px; }
+
+fieldset {
+  border: 2px groove red; }
+  fieldset legend {
+    font-weight: 700;
+    font-size: 30px;
+    letter-spacing: 2px;
+    text-align: center;
+    border: none;
+    width: 250px; }
+  fieldset p {
+    text-align: center;
+    margin: 20px 40px;
+    font-size: 16px; }
+  fieldset h4 {
+    text-align: center;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-top: 20px; }
+  fieldset .picto {
+    width: 50px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 50px; }
+  fieldset .btn {
+    margin: 0 auto;
+    display: block;
+    background-color: #333;
+    color: #fff;
+    font-weight: 700;
+    width: 250px;
+    border-radius: 0;
+    margin-bottom: 30px;
+    letter-spacing: 1px; }
+
+.services {
+  background: url(https://images.pexels.com/photos/140945/pexels-photo-140945.jpeg?w=940&h=650&auto=compress&cs=tinysrgb) 0/cover no-repeat;
+  border: 1px solid transparent; }
+  .services fieldset p {
+    color: #fff;
+    font-weight: 700;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; }
+
+.gallery {
+  padding: 0;
+  margin: 0;
+  border: none;
+  position: relative;
+  width: 100%; }
+  .gallery div .img-section {
+    margin-bottom: 25px;
+    overflow: hidden;
+    height: 200px;
+    padding: 0;
+    padding-right: 5px;
+    margin-bottom: 5px; }
+    .gallery div .img-section:nth-of-type(3) {
+      padding: 0; }
+      @media (min-width: 768px) and (max-width: 991px) {
+        .gallery div .img-section:nth-of-type(3) {
+          padding-right: 5px; } }
+    .gallery div .img-section:nth-of-type(6) {
+      padding: 0; }
+    .gallery div .img-section a {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+              transform: translate(-50%, -50%);
+      font-size: 26px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: red;
+      text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+      text-decoration: none;
+      transition-duration: .2s; }
+      .gallery div .img-section a:hover {
+        font-size: 30px; }
+    @media (max-width: 767px) {
+      .gallery div .img-section {
+        padding-right: 0;
+        width: 90vw;
+        margin-left: 5vw; } }
+
+footer {
+  text-align: center; }
 
 /*# sourceMappingURL=style.prefixer.css.map */
