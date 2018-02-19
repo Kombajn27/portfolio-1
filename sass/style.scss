@@ -127,6 +127,9 @@ fieldset {
 		border-radius: 0;
 		margin-bottom: 30px;
 		letter-spacing: 1px;
+		&:hover {
+			color: red;
+		}
 	}
 }
 

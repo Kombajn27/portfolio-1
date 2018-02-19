@@ -97,6 +97,8 @@ fieldset {
     border-radius: 0;
     margin-bottom: 30px;
     letter-spacing: 1px; }
+    fieldset .btn:hover {
+      color: red; }
 
 .services {
   background: url(https://images.pexels.com/photos/140945/pexels-photo-140945.jpeg?w=940&h=650&auto=compress&cs=tinysrgb) 0/cover no-repeat;
